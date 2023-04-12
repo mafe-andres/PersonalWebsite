@@ -1,0 +1,57 @@
+$turqoiuse: #38CAC2;
+$yellow: #FFC107;
+$purple: #7F2F9F;
+$green: #8CDB00;
+$red: #FF023F;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+  height:100%;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.homepage-background{
+  background-color: #1B1B1B;
+}
+
+.navbar-box{
+  width:calc(100%/5);
+  border: 1.7px solid white;
+  margin:0.5rem;
+}
+
+.navbar-text{
+  color:white;
+  font-size: 1.5rem;
+}
+
+.navbar-text-1:hover{
+  color: white;
+  background-color: $turqoiuse;
+}
+
+.navbar-text-2:hover{
+  color: white;
+  background-color: $yellow;
+}
+
+.navbar-text-3:hover{
+  color: white;
+  background-color: $purple;
+}
+
+.navbar-text-4:hover{
+  color: white;
+  background-color: $green;
+}
+
+.navbar-text-1:hover{
+  color: white;
+  background-color: $turqoiuse;
+}
+
+.navbar-text-5:hover{
+  color: white;
+  background-color: $red;
+}
