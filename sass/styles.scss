@@ -4,11 +4,33 @@ $purple: #7F2F9F;
 $green: #8CDB00;
 $red: #FF023F;
 
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html, body {
   height:100%;
   font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.homepage-body{
+  background-color: #1B1B1B;
+  height: 100%;
+  @include make-container();
+  .homepage-body-title{
+    @include make-row();
+  }
+  .homepage-body-nav{
+    @include make-row();
+  }
+}
+
+.homepage-body-title{
+  .title-letter{
+    @include make-col-ready();
+    @include make-col(2);
+    
+  }
+
 }
 
 .homepage-background{
