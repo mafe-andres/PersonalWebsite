@@ -1,0 +1,122 @@
+@use "colors" as c;
+
+html {
+  height:100%;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.homepage-body{
+  background-color: c.$black;
+  height: 100%;
+  @extend .d-flex, 
+          .justify-content-center, 
+          .align-items-center;
+}
+
+.homepage-body-container{
+  @extend .container;
+}
+
+.homepage-body-title{
+  @include make-row();
+  @extend .d-flex, 
+          .justify-content-center, 
+          .align-items-center;
+}
+
+.homepage-body-title{
+  margin-bottom: 10px;
+  .title-letter{
+    @include make-col-ready();
+    @include make-col(2);
+    @extend .p-0;
+  }
+  .title-letter-img{
+    @extend .img-fluid
+  }
+}
+
+.homepage-body-nav{
+  height: 35%;
+  @include make-row();
+  @extend .d-flex, 
+          .justify-content-center, 
+          .align-items-center;
+}
+
+.nav-navbar{
+  width: 100%;
+  @extend .navbar,
+          .navbar-expand-md,
+          .justify-content-center;
+}
+
+.nav-navbar-list {
+  justify-content: center;
+  width: 100%;
+  @include media-breakpoint-down(sm) {
+    flex-grow: 1;
+  }
+  @extend .navbar-nav;
+}
+
+.nav-navbar-item {
+  border: 1.7px solid white;
+  margin: 5px;
+  text-align: center;
+  @include media-breakpoint-down(sm) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include media-breakpoint-up(sm) {
+    width: 100%;  
+  }
+  @extend .nav-item;
+}
+
+.nav-navbar-link {
+  color:white;
+  font-size: 1.5rem;
+  @extend .nav-link;
+}
+
+.navbar-box{
+  width:calc(100%/5);
+  border: 1.7px solid white;
+  margin:0.5rem;
+}
+
+.navbar-text{
+  color:white;
+  font-size: 1.5rem;
+}
+
+.navbar-text-1:hover{
+  color: white;
+  background-color: c.$turqoiuse;
+}
+
+.navbar-text-2:hover{
+  color: white;
+  background-color: c.$yellow;
+}
+
+.navbar-text-3:hover{
+  color: white;
+  background-color: c.$purple;
+}
+
+.navbar-text-4:hover{
+  color: white;
+  background-color: c.$green;
+}
+
+.navbar-text-1:hover{
+  color: white;
+  background-color: c.$turqoiuse;
+}
+
+.navbar-text-5:hover{
+  color: white;
+  background-color: c.$red;
+}

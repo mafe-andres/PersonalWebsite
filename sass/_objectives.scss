@@ -1,0 +1,13 @@
+@use "colors" as c;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    height:100%;
+    font-family: Montserrat, Helvetica, sans-serif;
+    background-color: c.$black;
+}
+
+.title {
+    font-size: 5rem;
+    margin: 25px;
+}
