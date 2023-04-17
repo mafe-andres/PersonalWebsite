@@ -5,25 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Objectives</title>
 </head>
+<header>
+    <nav class="header-navbar">
+        <div class="header-navbar-container">
+          <a class="header-navbar-logo" href="/homepage.html">
+            <img src="/images/M.png" class="navbar-logo-img" alt="MAFE">
+          </a>
+          <button class="navbar-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-collapse-icon"></span>
+          </button>
+          <div class="header-navbar-collapse" id="collapsibleNavbar">
+            <ul class="header-navbar-list">
+                <li class="header-navbar-item">
+                  <a class="header-navbar-link navbar-text-1" href="/objectives.html">Objectives</a>
+                </li>
+                <li class="header-navbar-item">
+                  <a class="header-navbar-link navbar-text-2" href="#">Compsci</a>
+                </li>
+                <li class="header-navbar-item">
+                  <a class="header-navbar-link navbar-text-3" href="#">Hobbies</a>
+                </li>
+                <li class="header-navbar-item">
+                  <a class="header-navbar-link navbar-text-4" href="#">About this site</a>
+                </li>
+                <li class="header-navbar-item">
+                  <a class="header-navbar-link navbar-text-5" href="#">Contact me</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
-    <div class="">
-        <div class="">
-            <h1 class="">Objectives</h1>
-        </div>
-        <div class="">
-            <div class="">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Iure doloribus sapiente temporibus minima dolores, vel iusto, praesentium rem veritatis, velit fugiat. 
-                    Optio expedita dolore ad, pariatur facilis voluptatem eos harum.
-                </p>
-            </div>
-            <div class="col-md-7">
-                <img class="img-fluid" src="/images/questionMarks.jpg" alt="questionmarks">
-            </div>
-        </div>
+  <section class="objectives-body">
+    <h1 class="objectives-body-title">Objectives</h1>
+    <div class="objectives-body-container">
+      <div class="objectives-container">
+        <ol class="objectives-numbers" type="1">
+          <li><span class="objectives-objective">list element one</span></li>
+          <li><span class="objectives-objective">list element two</span></li>
+          <li><span class="objectives-objective">list element three</span></li>
+        </ol>
+      </div>
+      <div class="target-container">
+        <img src="/images/target.png" class="target-img">
+      </div>
     </div>
+
+  </section>
 
 </body>
 </html>

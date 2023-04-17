@@ -1,12 +1,12 @@
 @use "colors" as c;
 
-html {
+html,body {
   height:100%;
   font-family: Montserrat, Helvetica, sans-serif;
+  background-color: c.$black;
 }
 
 .homepage-body{
-  background-color: c.$black;
   height: 100%;
   @extend .d-flex, 
           .justify-content-center, 
@@ -78,45 +78,4 @@ html {
   color:white;
   font-size: 1.5rem;
   @extend .nav-link;
-}
-
-.navbar-box{
-  width:calc(100%/5);
-  border: 1.7px solid white;
-  margin:0.5rem;
-}
-
-.navbar-text{
-  color:white;
-  font-size: 1.5rem;
-}
-
-.navbar-text-1:hover{
-  color: white;
-  background-color: c.$turqoiuse;
-}
-
-.navbar-text-2:hover{
-  color: white;
-  background-color: c.$yellow;
-}
-
-.navbar-text-3:hover{
-  color: white;
-  background-color: c.$purple;
-}
-
-.navbar-text-4:hover{
-  color: white;
-  background-color: c.$green;
-}
-
-.navbar-text-1:hover{
-  color: white;
-  background-color: c.$turqoiuse;
-}
-
-.navbar-text-5:hover{
-  color: white;
-  background-color: c.$red;
 }

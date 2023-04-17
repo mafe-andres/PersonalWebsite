@@ -1,0 +1,76 @@
+@use "colors" as c;
+
+.header-navbar{
+    @extend .navbar,
+            .navbar-expand-md;
+}
+
+.header-navbar-container{
+    @extend .container-fluid;
+}
+
+.header-navbar-logo{
+    @extend .navbar-brand;
+    .navbar-logo-img{
+        width: 50px
+    }
+}
+
+.navbar-collapse-button{
+    @extend .navbar-toggler;
+    .navbar-collapse-icon{
+        @extend .navbar-toggler-icon;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+.header-navbar-collapse{
+    @extend .collapse,
+            .navbar-collapse;
+}
+
+.header-navbar-list {
+    @extend .navbar-nav;
+}
+
+.header-navbar-item {
+    text-align: center;
+    @extend .nav-item;
+}
+
+.header-navbar-link {
+    color:white;
+    font-size: 1rem;
+    @extend .nav-link;
+}
+
+.navbar-text-1:hover{
+    color: white;
+    background-color: c.$turqoiuse;
+}
+  
+.navbar-text-2:hover{
+    color: white;
+    background-color: c.$yellow;
+}
+  
+.navbar-text-3:hover{
+    color: white;
+    background-color: c.$purple;
+}
+  
+.navbar-text-4:hover{
+    color: white;
+    background-color: c.$green;
+}
+  
+.navbar-text-1:hover{
+    color: white;
+    background-color: c.$turqoiuse;
+}
+  
+.navbar-text-5:hover{
+    color: white;
+    background-color: c.$red;
+}
+
