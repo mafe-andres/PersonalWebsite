@@ -1,6 +1,20 @@
+@use "colors" as c;
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "navbar";
 @import "homepage";
 @import "objectives";
+@import "hobbies";
+
+html,body {
+    height:100%;
+    font-family: Montserrat, Helvetica, sans-serif;
+    background-color: c.$black;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}

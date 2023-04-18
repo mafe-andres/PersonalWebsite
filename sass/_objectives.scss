@@ -1,25 +1,13 @@
-@use "colors" as c;
-
-html,body {
-    height:100%;
-    font-family: Montserrat, Helvetica, sans-serif;
-    background-color: c.$black;
-}  
-
 .objectives-body{
     @extend .container;
 }
 
-.objectives-body-title{
-    color: white;
-    font-size: 2rem;
-}
-
-.objectives-body-container{
-    @include make-row()    
-}
-
 .objectives-container{
+    width: 100%;
+    @include make-row(); 
+}
+
+.objectives-bullets-container{
     @include make-col-ready();
     @include media-breakpoint-up(md) {
         @include make-col(7);
@@ -28,20 +16,20 @@ html,body {
             .align-items-center;
 }
 
-.objectives-numbers{
+.objectives-bullets-numbers{
     color: white;
     font-size: 4rem;
     margin-left: 45px;
 }
 
-.objectives-objective{
+.objectives-bullet{
     color: white;
     display:inline-block;
     vertical-align: middle;
     font-size: 2rem;
 }
 
-.target-container{
+.objectives-target-container{
     @include make-col-ready();
     @include media-breakpoint-up(md) {
         @include make-col(5);
@@ -50,6 +38,9 @@ html,body {
             .align-items-center;
 }
 
-.target-img{
+.objectives-target-img{
     @extend .img-fluid;
+    @include media-breakpoint-down(md){
+        margin: 20px;
+    }
 }

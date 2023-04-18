@@ -1,0 +1,9 @@
+.hobbies-body{
+    width: 100%;
+}
+
+.hobbies-card-row{
+    width: 100%;
+    @include make-row($gutter: 0);
+    @extend .justify-content-center;
+}
