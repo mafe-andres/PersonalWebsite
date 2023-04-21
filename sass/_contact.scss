@@ -1,0 +1,43 @@
+.contact-container{
+    height: 100%;
+    width: 100%;
+    @extend .container;
+
+    .contact-title-row{
+        height: 10%;
+        @include make-row($gutter: 0);
+        @extend .d-flex,
+                .justify-content-center,
+                .align-items-center;
+    }
+    
+    .contact-body-row{
+        height: 90%;
+        width: 100%;
+        text-align: center;
+        @include make-row($gutter: 0);
+        @extend .d-flex,
+                .justify-content-center,
+                .align-items-center,
+                .m-0;
+    }
+}
+
+.contact-body-row{
+    .contact-body-info-col{
+        width: 100%;
+        @include make-col($columns: 1);
+    }
+
+    .contact-body-form-col{
+        width: 100%;
+        @include make-col($columns: 1);
+    }
+}
+
+.contact-body-info{
+    font-size: 1.3rem;
+    color: white;
+    justify-self: center;
+    margin: 0;
+}
