@@ -1,0 +1,30 @@
+.about-body{
+    height: 100%;
+    @extend .container,
+            .align-items-center;
+}
+
+.about-title-row{
+    text-align: center;
+    @include make-row();
+}
+
+.about-body-row{
+    @include make-row();
+    .about-img-col{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(7);
+        }
+    }
+    .about-text-col{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(5);
+        }
+    }
+}
+
+.about-img{
+    @extend .img-fluid;
+}
