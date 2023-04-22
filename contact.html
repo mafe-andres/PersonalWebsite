@@ -1,79 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Contact</title>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="header-navbar">
-            <div class="header-navbar-container">
-              <a class="header-navbar-logo" href="/homepage.html">
-                <img src="/images/M.png" class="navbar-logo-img" alt="MAFE">
-              </a>
-              <button class="navbar-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-collapse-icon"></span>
-              </button>
-              <div class="header-navbar-collapse" id="collapsibleNavbar">
-                <ul class="header-navbar-list">
-                    <li class="header-navbar-item">
-                      <a class="header-navbar-link navbar-text-1" href="/objectives.html">Objectives</a>
-                    </li>
-                    <li class="header-navbar-item">
-                      <a class="header-navbar-link navbar-text-2" href="/compsci.html">Compsci</a>
-                    </li>
-                    <li class="header-navbar-item">
-                      <a class="header-navbar-link navbar-text-3" href="/hobbies.html">Hobbies</a>
-                    </li>
-                    <li class="header-navbar-item">
-                      <a class="header-navbar-link navbar-text-4" href="/about.html">About this site</a>
-                    </li>
-                    <li class="header-navbar-item">
-                      <a class="header-navbar-link navbar-text-5" href="/contact.html">Contact me</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="contact-container">
-            <div class="contact-title-row" >
-                <h1 class="title">Contact Me</h1>
-            </div>
-            <div class="contact-body-row">
-                <div class="contact-body-info-col">
-                    <p class="contact-body-info">La Unión, Cartago • +506 87245501<br>
-                        mafe.andres.monge@gmail.com<br>
-                        maria.andres@ucr.ac.cr
-                    </p>
-                </div>
-                <div class="contact-body-form-col">
-                    <form method="post" action="send-email.php">
-                        <div class="form-group">
-                          <label for="name">Name:</label>
-                          <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email address:</label>
-                          <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="subject">Subject:</label>
-                          <input type="text" class="form-control" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                          <label for="message">Message:</label>
-                          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                      </form>
-                </div>
-            </div>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-logo" href="/homepage.html">
+          <img src="/images/M.png" class="navbar-logo-img" alt="MAFE">
+        </a>
+        <button class="navbar-collapse-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar">
+          <span class="navbar-collapse-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-1" href="/objectives.html">Objectives</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-2" href="/compsci.html">Compsci</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-3" href="/hobbies.html">Hobbies</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-4" href="/about.html">About this site</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-5" href="/contact.html">Contact me</a>
+            </li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="contact-container">
+      <section class="contact-title-row">
+        <h1 class="title">Contact Me</h1>
+      </section>
+      <section class="contact-body-row">
+        <section class="contact-body-info-col">
+          <p class="contact-body-info">La Unión, Cartago<br>+506 87245501<br>
+            mafe.andres.monge@gmail.com<br>
+            maria.andres@ucr.ac.cr
+          </p>
+        </section>
+        <section class="contact-body-links-col">
+          <a class="contact-body-link-col" href="https://www.linkedin.com/in/maría-fernanda-andrés-44b562185/">
+            <img src="/images/linkedin.png" class="contact-body-link-img" alt="LinkedIn">
+          </a>
+          <a class="contact-body-link-col" href="https://github.com/mafe-andres">
+            <img src="/images/github.png" class="contact-body-link-img" alt="Github">
+          </a>
+          <a class="contact-body-link-col" href="https://instagram.com/mafam25?igshid=MTIzZWQxMDU=">
+            <img src="/images/instagram.png" class="contact-body-link-img" alt="Instagram">
+          </a>
+        </section>
+    </div>
+  </main>
 </body>
 </html>

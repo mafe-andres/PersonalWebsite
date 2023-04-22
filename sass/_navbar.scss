@@ -1,76 +1,99 @@
 @use "colors" as c;
 
-.header-navbar{
+.navbar{
     @extend .navbar,
             .navbar-expand-md;
-}
-
-.header-navbar-container{
-    @extend .container-fluid;
-}
-
-.header-navbar-logo{
-    @extend .navbar-brand;
-    .navbar-logo-img{
-        width: 40px
+    .navbar-container{
+        @extend .container-fluid;
     }
 }
 
-.navbar-collapse-button{
-    @extend .navbar-toggler;
-    .navbar-collapse-icon{
-        @extend .navbar-toggler-icon;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.collapse {
+  visibility: hidden;
+}
+.collapse.show {
+  visibility: visible;
+  display: block;
+}
+
+.collapsing{
+    transition: height 1s ease-out;
+}
+
+.navbar-container{
+    .navbar-logo{
+        @extend .navbar-brand;
+        .navbar-logo-img{
+            width: 40px
+        }
+    }
+
+    .navbar-collapse-button{
+        @extend .navbar-toggler;
+        .navbar-collapse-icon{
+            @extend .navbar-toggler-icon;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+
+    .navbar-collapse{
+        background-color: c.$red;
+        @extend .collapse,
+                .navbar-collapse;
+        .navbar-list {
+            @extend .navbar-nav;
+        }
     }
 }
 
-.header-navbar-collapse{
-    @extend .collapse,
-            .navbar-collapse;
+.navbar-list {
+    .navbar-item {
+        text-align: center;
+        @extend .nav-item;
+    }
 }
 
-.header-navbar-list {
-    @extend .navbar-nav;
+.navbar-item {
+    .navbar-link {
+        color:white;
+        font-size: 1rem;
+        @extend .nav-link;
+    }
+
+    .navbar-text-1:hover{
+        color: white;
+        background-color: c.$turqoiuse;
+    }
+      
+    .navbar-text-2:hover{
+        color: white;
+        background-color: c.$yellow;
+    }
+      
+    .navbar-text-3:hover{
+        color: white;
+        background-color: c.$purple;
+    }
+      
+    .navbar-text-4:hover{
+        color: white;
+        background-color: c.$green;
+    }
+      
+    .navbar-text-5:hover{
+        color: white;
+        background-color: c.$red;
+    }
 }
 
-.header-navbar-item {
-    text-align: center;
-    @extend .nav-item;
+.navbar-item-dropdown {
+    .navbar-dropdown-link{
+        @extend .dropdown-toggle;
+    }
+    .navbar-dropdown-list{
+        @extend .dropdown-menu;
+        .navbar-dropdown-item{
+            @extend .dropdown-item;
+        }
+    }
 }
-
-.header-navbar-link {
-    color:white;
-    font-size: 1rem;
-    @extend .nav-link;
-}
-
-.navbar-text-1:hover{
-    color: white;
-    background-color: c.$turqoiuse;
-}
-  
-.navbar-text-2:hover{
-    color: white;
-    background-color: c.$yellow;
-}
-  
-.navbar-text-3:hover{
-    color: white;
-    background-color: c.$purple;
-}
-  
-.navbar-text-4:hover{
-    color: white;
-    background-color: c.$green;
-}
-  
-.navbar-text-1:hover{
-    color: white;
-    background-color: c.$turqoiuse;
-}
-  
-.navbar-text-5:hover{
-    color: white;
-    background-color: c.$red;
-}
-

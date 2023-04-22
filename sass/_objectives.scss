@@ -1,46 +1,38 @@
-.objectives-body{
-    @extend .container;
-}
-
-.objectives-container{
-    width: 100%;
-    @include make-row(); 
-}
-
-.objectives-bullets-container{
-    @include make-col-ready();
-    @include media-breakpoint-up(md) {
-        @include make-col(7);
+.template-body-row{
+    .objectives-body-bullets-col{
+        width: 100%;
+        @include make-col-ready();
+        @include media-breakpoint-up(lg){
+            @include make-col(7);
+        }
     }
-    @extend .d-flex,
-            .align-items-center;
-}
-
-.objectives-bullets-numbers{
-    color: white;
-    font-size: 4rem;
-    margin-left: 45px;
-}
-
-.objectives-bullet{
-    color: white;
-    display:inline-block;
-    vertical-align: middle;
-    font-size: 2rem;
-}
-
-.objectives-target-container{
-    @include make-col-ready();
-    @include media-breakpoint-up(md) {
-        @include make-col(5);
+    .objectives-body-img-col{
+        width: 100%;
+        text-align: center;
+        @include make-col-ready();
+        @include media-breakpoint-up(lg){
+            @include make-col(5);
+        }
     }
-    @extend .d-flex,
-            .align-items-center;
 }
 
-.objectives-target-img{
-    @extend .img-fluid;
-    @include media-breakpoint-down(md){
-        margin: 20px;
+.objectives-body-bullets-col{
+    .objectives-bullets-numbers{
+        color: white;
+        font-size: 4rem;
+        margin-left: 45px;
+    }
+    
+    .objectives-body-bullet{
+        color: white;
+        display:inline-block;
+        vertical-align: middle;
+        font-size: 2rem;
+    }
+}
+
+.objectives-body-img-col{
+    .objectives-body-img{
+        @extend .img-fluid;
     }
 }

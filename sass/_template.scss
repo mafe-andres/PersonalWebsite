@@ -1,0 +1,20 @@
+.template-container{
+    height: 100%;
+    width: 100%;
+    @extend .container;
+
+    .template-title-row{
+        height: 10%;
+        @include make-row($gutter: 0);
+        @extend .d-flex,
+                .justify-content-center,
+                .align-items-center;
+    }
+    .template-body-row{
+        height: 90%;
+        @include make-row($gutter: 0);
+        @extend .d-flex,
+                .justify-content-center,
+                .align-items-center;
+    }
+}

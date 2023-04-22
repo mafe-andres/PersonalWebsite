@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Objectives</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Objectives</title>
 </head>
+
 <body>
   <header class="header">
-    <nav class="header-navbar">
-        <div class="header-navbar-container">
-          <a class="header-navbar-logo" href="/homepage.html">
-            <img src="/images/M.png" class="navbar-logo-img" alt="MAFE">
-          </a>
-          <button class="navbar-collapse-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-collapse-icon"></span>
-          </button>
-          <div class="header-navbar-collapse" id="collapsibleNavbar">
-            <ul class="header-navbar-list">
-                <li class="header-navbar-item">
-                  <a class="header-navbar-link navbar-text-1" href="/objectives.html">Objectives</a>
-                </li>
-                <li class="header-navbar-item">
-                  <a class="header-navbar-link navbar-text-2" href="/compsci.html">Compsci</a>
-                </li>
-                <li class="header-navbar-item">
-                  <a class="header-navbar-link navbar-text-3" href="/hobbies.html">Hobbies</a>
-                </li>
-                <li class="header-navbar-item">
-                  <a class="header-navbar-link navbar-text-4" href="/about.html">About this site</a>
-                </li>
-                <li class="header-navbar-item">
-                  <a class="header-navbar-link navbar-text-5" href="/contact.html">Contact me</a>
-                </li>
-              </ul>
-            </div>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-logo" href="/homepage.html">
+          <img src="/images/M.png" class="navbar-logo-img" alt="MAFE">
+        </a>
+        <button class="navbar-collapse-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar">
+          <span class="navbar-collapse-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-1" href="/objectives.html">Objectives</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-2" href="/compsci.html">Compsci</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-3" href="/hobbies.html">Hobbies</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-4" href="/about.html">About this site</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link navbar-text-5" href="/contact.html">Contact me</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
   </header>
-  <main class="objectives-body">
-    <h1 class="title">Objectives</h1>
-    <div class="objectives-container">
-      <div class="objectives-bullets-container">
-        <ol class="objectives-bullets-numbers" type="1">
-          <li><span class="objectives-bullet">list element one</span></li>
-          <li><span class="objectives-bullet">list element two</span></li>
-          <li><span class="objectives-bullet">list element three</span></li>
-        </ol>
+  <main class="main">
+    <div class="template-container">
+      <div class="template-title-row">
+        <h1 class="title">Objectives</h1>
       </div>
-      <div class="objectives-target-container">
-        <img src="/images/target.png" class="objectives-target-img">
-      </div>
+      <section class="template-body-row">
+        <div class="objectives-body-bullets-col">
+          <ol class="objectives-bullets-numbers" type="1">
+            <li><span class="objectives-body-bullet">list element one</span></li>
+            <li><span class="objectives-body-bullet">list element two</span></li>
+            <li><span class="objectives-body-bullet">list element three</span></li>
+          </ol>
+        </div>
+        <div class="objectives-body-img-col">
+          <img src="/images/target.png" class="objectives-body-img" alt="Target">
+        </div>
+      </section>
     </div>
   </main>
 </body>

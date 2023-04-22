@@ -1,15 +1,29 @@
 @use "colors" as c;
+
+@import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "navbar";
+@import "template";
 @import "homepage";
 @import "objectives";
 @import "hobbies";
 @import "about";
+@import "contact";
 
-html,body {
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
     height:100%;
+}
+
+body{
+    height: 100%;
     font-family: Montserrat, Helvetica, sans-serif;
     background-color: c.$black;
 }
@@ -18,4 +32,12 @@ html,body {
     text-align: center;
     color: white;
     font-size: 2rem;
+}
+
+.header{
+    height: 10%;
+}
+
+.main{
+    height: 90%;
 }
