@@ -8,18 +8,6 @@
     }
 }
 
-.collapse {
-  visibility: hidden;
-}
-.collapse.show {
-  visibility: visible;
-  display: block;
-}
-
-.collapsing{
-    transition: height 1s ease-out;
-}
-
 .navbar-container{
     .navbar-logo{
         @extend .navbar-brand;
@@ -37,9 +25,6 @@
     }
 
     .navbar-collapse{
-        background-color: c.$red;
-        @extend .collapse,
-                .navbar-collapse;
         .navbar-list {
             @extend .navbar-nav;
         }
@@ -59,41 +44,51 @@
         font-size: 1rem;
         @extend .nav-link;
     }
+}
 
-    .navbar-text-1:hover{
-        color: white;
-        background-color: c.$turqoiuse;
-    }
-      
-    .navbar-text-2:hover{
-        color: white;
-        background-color: c.$yellow;
-    }
-      
-    .navbar-text-3:hover{
-        color: white;
-        background-color: c.$purple;
-    }
-      
-    .navbar-text-4:hover{
-        color: white;
-        background-color: c.$green;
-    }
-      
-    .navbar-text-5:hover{
-        color: white;
-        background-color: c.$red;
+.navbar-text-1:hover{
+    color: white;
+    background-color: c.$turqoiuse;
+}
+  
+.navbar-text-2:hover{
+    color: white;
+    background-color: c.$yellow;
+}
+  
+.navbar-text-3:hover{
+    color: white;
+    background-color: c.$purple;
+}
+  
+.navbar-text-4:hover{
+    color: white;
+    background-color: c.$green;
+}
+  
+.navbar-text-5:hover{
+    color: white;
+    background-color: c.$red;
+}
+
+.navbar-item{
+    .navbar-dropdown-list{
+        background-color: c.$black-light;
+        text-align: center;
     }
 }
 
-.navbar-item-dropdown {
-    .navbar-dropdown-link{
-        @extend .dropdown-toggle;
+.navbar-dropdown-list{
+    .navbar-dropdown-item{
+        color: white;
     }
-    .navbar-dropdown-list{
-        @extend .dropdown-menu;
-        .navbar-dropdown-item{
-            @extend .dropdown-item;
-        }
+
+    .navbar-dropdown-item:hover{
+        @extend .navbar-text-2;
     }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }

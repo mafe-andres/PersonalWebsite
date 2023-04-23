@@ -18,3 +18,13 @@
                 .align-items-center;
     }
 }
+
+.button{
+    @extend .btn,
+            .btn-primary;
+}
+
+.cardy{
+    @extend .card,
+            .card-body;
+}

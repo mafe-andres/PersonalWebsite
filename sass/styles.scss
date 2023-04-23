@@ -1,6 +1,5 @@
 @use "colors" as c;
 
-@import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -11,6 +10,7 @@
 @import "hobbies";
 @import "about";
 @import "contact";
+@import "courses";
 
 * { 
     margin: 0;
@@ -32,10 +32,6 @@ body{
     text-align: center;
     color: white;
     font-size: 2rem;
-}
-
-.header{
-    height: 10%;
 }
 
 .main{

@@ -1,0 +1,79 @@
+.course-card{
+    width: 80%;
+    margin: auto;
+    @include media-breakpoint-down(md){
+        margin: 20px auto;
+    }
+}
+
+.courses-cards-col{
+    @include make-col-ready();
+    @include make-col(12);
+}
+
+.course-card-row{
+    @include make-row($gutter: 10px);
+    .course-img-col{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+        }
+        @extend .d-flex,
+                .justify-content-center;
+    }
+    .course-body-col{
+        @include make-col-ready();
+        @include media-breakpoint-up(md) {
+            @include make-col(8);
+        }
+        @extend .d-flex,
+                .align-items-center;
+    }
+}
+
+.courese-col-order1{
+    @extend .order-md-2,
+            .order-1;
+}
+
+.course-col-order2{
+    @extend .order-md-1,
+            .order-2;
+}
+
+.course-img-col{
+    .course-img{
+        max-width: 250px;
+        @extend .card-img,
+                .img-fluid,
+                .rounded-circle;
+        @include media-breakpoint-down(md){
+            margin: 10px;
+        }
+    }
+}
+
+.course-body-col{
+    .course-body{
+        @extend .card-body;
+    }    
+}
+
+.course-body{
+    .course-title{
+        color: rgb(255, 255, 255);
+        @extend .card-title;
+    }
+    
+    .course-subtitle{
+        color: rgb(215, 215, 215);
+        @extend .card-title;
+    }
+
+    .course-text{
+        justify-content: center;
+        color: rgb(147, 147, 147);
+        @extend .card-text;
+    }
+    
+}
