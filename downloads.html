@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Downloads</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a class="navbar-logo" href="/homepage.html">
+                    <img src="/images/M.png" class="navbar-logo-img" alt="MAFE">
+                </a>
+                <button class="navbar-collapse-button" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-collapse-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="navbar-link navbar-text-1" href="/objectives.html">Objectives</a>
+                        </li>
+                        <li class=" navbar-item dropdown">
+                            <a class="navbar-link navbar-text-2 dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a>
+                            <ul class="navbar-dropdown-list dropdown-menu">
+                                <li><a class="navbar-dropdown-item dropdown-item" href="compsci.html">Why compsci?</a></li>
+                                <li><a class="navbar-dropdown-item dropdown-item" href="courses.html">Courses</a></li>
+                                <li><a class="navbar-dropdown-item dropdown-item" href="colleagues.html">Collegues</a></li>
+                                <li><a class="navbar-dropdown-item dropdown-item" href="downloads.html">Downloads</a></li>
+                            </ul>
+                         </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link navbar-text-3" href="/hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link navbar-text-4" href="/about.html">About this site</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link navbar-text-5" href="/contact.html">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="template-container">
+            <div class="template-title-row">
+                <h1 class="title">Downloads</h1>
+            </div>
+            <section class="template-body-row">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Website</h5>
+                        <p class="card-text">The code for this very Website. Built with HTML, SASS and Bootstrap</p>
+                        <a href="https://github.com/mafe-andres/PersonalWebsite" class="card-link">Github repository</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">BlackJack Game</h5>
+                        <p class="card-text">A blackjack game with GUI, built with JAVA. Complete with a framework to build card games.</p>
+                        <a href="https://github.com/mafe-andres/Veintiuno/" class="card-link">Github repository</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">CITIC Website</h5>
+                        <p class="card-text">Website built by a large team I was a part of. It is built using C#, Blazor, and .NET EFCore. It uses clean arquitectures.</p>
+                        <a href="https://bitbucket.org/cristian_quesadalopez/ecci_ci0128_ii2022_g02_pi/src/main/" class="card-link">Bitbucket repository</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

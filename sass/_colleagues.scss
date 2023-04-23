@@ -1,0 +1,45 @@
+.template-body-row{
+    .colleagues-row{
+        width: 75%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include make-row($gutter: 10px);
+        .colleague-card-col{
+            @include make-col-ready();
+            @include media-breakpoint-up(md){
+                @include make-col(4);
+            }
+            @extend .d-flex,
+                    .justify-content-center;
+        }
+    }
+}
+
+.colleague-card{
+    width: 100%;
+    transition: transform 0.3s ease-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    @extend .card;
+}
+
+.colleague-card{
+    .colleague-card-img{
+        @extend .card-img-top,
+                .img-fluid;
+    }
+    .colleague-card-body{
+        @extend .card-body;
+        .colleague-card-body-title{
+            @extend .card-title;
+        }
+        .colleague-card-body-text{
+            @extend .card-text;
+        }
+    }
+}
