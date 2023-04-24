@@ -1,0 +1,23 @@
+<!--#include virtual="head.shtml" --> 
+<!--#include virtual="header.shtml" --> 
+  <main class="main">
+    <div class="template-container">
+      <div class="template-title-row">
+        <h1 class="title">Objectives</h1>
+      </div>
+      <section class="template-body-row">
+        <div class="objectives-body-bullets-col">
+          <ol class="objectives-bullets-numbers" type="1">
+            <li><span class="objectives-body-bullet">Graduate soon</span></li>
+            <li><span class="objectives-body-bullet">Find a good job</span></li>
+            <li><span class="objectives-body-bullet">Give my boyfriend a lot of kisses</span></li>
+          </ol>
+        </div>
+        <div class="objectives-body-img-col">
+          <img src="images/target.png" class="objectives-body-img" alt="Target">
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

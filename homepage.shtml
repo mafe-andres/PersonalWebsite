@@ -1,0 +1,41 @@
+<!--#include virtual="head.shtml" --> 
+<body class="homepage-body">
+    <div class="homepage-body-container">
+      <div class="homepage-body-title">
+        <div class="title-letter">
+          <img src="images/M.png" class="title-letter-img">
+        </div>
+        <div class="title-letter">
+          <img src="images/A.png" class="title-letter-img">
+        </div>
+        <div class="title-letter">
+          <img src="images/F.png" class="title-letter-img">
+        </div>
+        <div class="title-letter">
+          <img src="images/E.png" class="title-letter-img">
+        </div>
+      </div>
+        <div class="homepage-body-nav">
+          <nav class="nav-navbar">
+            <ul class="nav-navbar-list">
+              <li class="nav-navbar-item">
+                <a class="nav-navbar-link navbar-text-1" href="objectives.shtml">Objectives</a>
+              </li>
+              <li class="nav-navbar-item">
+                <a class="nav-navbar-link navbar-text-2" href="compsci.shtml">Compsci</a>
+              </li>
+              <li class="nav-navbar-item">
+                <a class="nav-navbar-link navbar-text-3" href="hobbies.shtml">Hobbies</a>
+              </li>
+              <li class="nav-navbar-item">
+                <a class="nav-navbar-link navbar-text-4" href="about.shtml">About this site</a>
+              </li>
+              <li class="nav-navbar-item">
+                <a class="nav-navbar-link navbar-text-5" href="contact.html">Contact me</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+  </body>
+</html>

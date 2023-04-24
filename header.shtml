@@ -1,0 +1,42 @@
+<body>
+    <header class="header">
+      <nav class="navbar">
+          <div class="navbar-container">
+              <a class="navbar-logo" href="homepage.html">
+                  <img src="images/M.png" class="navbar-logo-img" alt="MAFE">
+              </a>
+              <button class="navbar-collapse-button" type="button" data-toggle="collapse"
+                  data-target="#collapsibleNavbar">
+                  <span class="navbar-collapse-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                  <ul class="navbar-list">
+                      <li class="navbar-item">
+                          <a class="navbar-link navbar-text-1" href="objectives.shtml">Objectives</a>
+                      </li>
+                      <li class=" navbar-item dropdown">
+                          <a class="navbar-link navbar-text-2 dropdown-toggle" href="#" data-bs-toggle="dropdown">Compsci </a>
+                          <ul class="navbar-dropdown-list dropdown-menu">
+                              <li><a class="navbar-dropdown-item dropdown-item" href="compsci.shtml">Why compsci?</a>
+                              </li>
+                              <li><a class="navbar-dropdown-item dropdown-item" href="courses.shtml">Courses</a></li>
+                              <li><a class="navbar-dropdown-item dropdown-item" href="colleagues.shtml">Colleagues</a>
+                              </li>
+                              <li><a class="navbar-dropdown-item dropdown-item" href="downloads.shtml">Downloads</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="navbar-item">
+                          <a class="navbar-link navbar-text-3" href="hobbies.shtml">Hobbies</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a class="navbar-link navbar-text-4" href="about.shtml">About this site</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a class="navbar-link navbar-text-5" href="contact.shtml">Contact me</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>

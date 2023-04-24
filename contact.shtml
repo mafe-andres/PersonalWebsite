@@ -1,0 +1,29 @@
+<!--#include virtual="head.shtml" --> 
+<!--#include virtual="header.shtml" --> 
+  <main class="main">
+    <div class="contact-container">
+      <section class="contact-title-row">
+        <h1 class="title">Contact Me</h1>
+      </section>
+      <section class="contact-body-row">
+        <section class="contact-body-info-col">
+          <p class="contact-body-info">La Unión, Cartago<br>+506 87245501<br>
+            mafe.andres.monge@gmail.com<br>
+            maria.andres@ucr.ac.cr
+          </p>
+        </section>
+        <section class="contact-body-links-col">
+          <a class="contact-body-link-col" href="https://www.linkedin.com/in/maría-fernanda-andrés-44b562185/">
+            <img src="images/linkedin.png" class="contact-body-link-img" alt="LinkedIn">
+          </a>
+          <a class="contact-body-link-col" href="https://github.com/mafe-andres">
+            <img src="images/github.png" class="contact-body-link-img" alt="Github">
+          </a>
+          <a class="contact-body-link-col" href="https://instagram.com/mafam25?igshid=MTIzZWQxMDU=">
+            <img src="images/instagram.png" class="contact-body-link-img" alt="Instagram">
+          </a>
+        </section>
+    </div>
+  </main>
+</body>
+</html>

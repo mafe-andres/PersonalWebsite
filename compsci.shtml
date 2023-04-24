@@ -1,0 +1,44 @@
+<!--#include virtual="head.shtml" --> 
+<!--#include virtual="header.shtml" --> 
+    <main class="main">
+        <div class="template-container">
+            <div class="template-title-row">
+                <h1 class="title">Why computer science?</h1>
+            </div>
+            <section class="compsci-body-row">
+                <div class="compsci-side-col">
+                    <img src="images/mente-en-eaccion.png" class="compsci-side-img" alt="MenTe">
+                    <img src="images/rocket-girls.png" class="compsci-side-img" alt="RocketGirls">
+                    <img src="images/programmer.png" class="compsci-side-img" alt="Programmer">
+                </div>
+                <div class="compsci-body-col">
+                    <p class="compsci-body-info">
+                        I started learning how to code in my ninth grade IT class and it was love at first sight. After I scored a 7/7 in that class I knew I had potential to become a professional. I still wasn't convinced though, 
+                        making simple Java games is one thing but dedicating my career to computers seemed a bit far fetched.
+                        Two NGOs have played a huge part on convincing me I had what it took. MenTe En Accion (Women in STEM) and Rocket Girls, both based in Costa Rica were fundamental in my decision to build a career in this profession.
+                    </p>
+                    <p class="compsci-body-info">
+                        Now I can proudly call myself a woman who codes <3
+                    </p>
+                </div>
+            </section>
+            <section class="relatedpages-container">
+                <div class="relatedpages-title-row">
+                    <h3 class="relatedpages-title">Related Pages</h3>
+                </div>
+                <div class="relatedpages-options-row">
+                    <div class="relatedpages-option-col">
+                        <a href="courses.shtml" class="relatedpages-option">Courses</a>
+                    </div>
+                    <div class="relatedpages-option-col">
+                        <a href="colleagues.shtml" class="relatedpages-option">Colleagues</a>
+                    </div>
+                    <div class="relatedpages-option-col">
+                        <a href="downloads.shtml" class="relatedpages-option">Downloads</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

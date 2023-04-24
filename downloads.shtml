@@ -1,0 +1,58 @@
+<!--#include virtual="head.shtml" --> 
+<!--#include virtual="header.shtml" --> 
+    <main class="main">
+        <div class="template-container">
+            <div class="template-title-row">
+                <h1 class="title">Downloads</h1>
+            </div>
+            <section class="downloads-body-row">
+                <div class="downloads-card-col">
+                    <div class="downloads-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Website</h5>
+                            <p class="card-text">The code for this very Website. Built with HTML, SASS and Bootstrap</p>
+                            <a href="https://github.com/mafe-andres/PersonalWebsite" class="card-link">Github repository</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="downloads-card-col">
+                    <div class="downloads-card">
+                        <div class="card-body">
+                            <h5 class="card-title">BlackJack Game</h5>
+                            <p class="card-text">A blackjack game with GUI, built with JAVA. Complete with a framework to build card games.</p>
+                            <a href="https://github.com/mafe-andres/Veintiuno/" class="card-link">Github repository</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="downloads-card-col">
+                    <div class="downloads-card">
+                        <div class="card-body">
+                            <h5 class="card-title">CITIC Website</h5>
+                            <p class="card-text">Website built by a large team I was a part of. It is built using C#, Blazor, and .NET EFCore. It uses clean arquitectures.</p>
+                            <a href="https://bitbucket.org/cristian_quesadalopez/ecci_ci0128_ii2022_g02_pi/src/main/" class="card-link">Bitbucket repository</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relatedpages-container">
+                <div class="relatedpages-title-row">
+                    <h3 class="relatedpages-title">Related Pages</h3>
+                </div>
+                <div class="relatedpages-options-row">
+                    <div class="relatedpages-option-col">
+                        <a href="compsci.shtml" class="relatedpages-option">Why computer science?</a>
+                    </div>
+                    <div class="relatedpages-option-col">
+                        <a href="colleagues.shtml" class="relatedpages-option">Colleagues</a>
+                    </div>
+                    <div class="relatedpages-option-col">
+                        <a href="downloads.shtml" class="relatedpages-option">Downloads</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

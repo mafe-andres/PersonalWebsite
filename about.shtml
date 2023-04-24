@@ -1,0 +1,24 @@
+<!--#include virtual="head.shtml" --> 
+<!--#include virtual="header.shtml" --> 
+  <main class="main">
+    <div class="template-container">
+      <div class="template-title-row">
+        <h1 class="title">About this site</h1>
+      </div>
+      <section class="template-body-row">
+        <div class="about-body-img-col">
+          <img src="images/creator.jpg" class="about-body-img" alt="Mafecita">
+        </div>
+        <div class="about-body-info-col">
+          <h3 class="about-body-title">Hi! I'm Maria.</h3>
+          <p class="about-body-info">
+            I am a fourth year computer science student at the University of Costa Rica and this is my personal website.
+          <p class="about-body-info">
+            I started learning how to code almost six years ago, and ever since my first program I have made sure to leave my signature on everything I have worked on. To me the quality of a program is as important as its usefulness. That's why I always strive to find a balance of both on every project I work on. But not only in my code, outside of my programming expertise I also aspire to put passion and dedication on everything new I do.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
