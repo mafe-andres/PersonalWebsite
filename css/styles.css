@@ -592,7 +592,7 @@ progress {
   content: "— ";
 }
 
-.img-fluid, .colleague-card .colleague-card-img, .course-img-col .course-img, .contact-body-link-img, .about-body-img-col .about-body-img, .hobby-img, .objectives-body-img-col .objectives-body-img, .homepage-body-title .title-letter-img {
+.img-fluid, .compsci-side-col .compsci-side-img, .colleague-card .colleague-card-img, .course-img-col .course-img, .contact-body-link-img, .about-body-img-col .about-body-img, .hobby-img, .objectives-body-img-col .objectives-body-img, .homepage-body-title .title-letter-img {
   max-width: 100%;
   height: auto;
 }
@@ -622,6 +622,7 @@ progress {
 
 .container, .contact-container, .homepage-body-container, .template-container,
 .container-fluid,
+.relatedpages-container,
 .navbar .navbar-container,
 .nav-navbar .navbar-container,
 .container-xxl,
@@ -3772,7 +3773,9 @@ textarea.form-control-lg {
 }
 .navbar > .container, .navbar > .contact-container, .nav-navbar > .container, .nav-navbar > .contact-container, .navbar > .homepage-body-container, .nav-navbar > .homepage-body-container, .navbar > .template-container, .nav-navbar > .template-container,
 .navbar > .container-fluid,
+.navbar > .relatedpages-container,
 .nav-navbar > .container-fluid,
+.nav-navbar > .relatedpages-container,
 .navbar > .navbar-container,
 .nav-navbar > .navbar-container,
 .navbar > .container-sm,
@@ -4184,7 +4187,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.card, .colleague-card, .hobby-card, .cardy {
+.card, .downloads-card-col .downloads-card, .colleague-card, .hobby-card, .cardy {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
@@ -4213,26 +4216,27 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
-.card > hr, .colleague-card > hr, .hobby-card > hr, .cardy > hr {
+.card > hr, .downloads-card-col .downloads-card > hr, .colleague-card > hr, .hobby-card > hr, .cardy > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group, .colleague-card > .list-group, .hobby-card > .list-group, .cardy > .list-group {
+.card > .list-group, .downloads-card-col .downloads-card > .list-group, .colleague-card > .list-group, .hobby-card > .list-group, .cardy > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child, .colleague-card > .list-group:first-child, .hobby-card > .list-group:first-child, .cardy > .list-group:first-child {
+.card > .list-group:first-child, .downloads-card-col .downloads-card > .list-group:first-child, .colleague-card > .list-group:first-child, .hobby-card > .list-group:first-child, .cardy > .list-group:first-child {
   border-top-width: 0;
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
 }
-.card > .list-group:last-child, .colleague-card > .list-group:last-child, .hobby-card > .list-group:last-child, .cardy > .list-group:last-child {
+.card > .list-group:last-child, .downloads-card-col .downloads-card > .list-group:last-child, .colleague-card > .list-group:last-child, .hobby-card > .list-group:last-child, .cardy > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
-.card > .card-header + .list-group, .colleague-card > .card-header + .list-group, .hobby-card > .card-header + .list-group, .cardy > .card-header + .list-group,
+.card > .card-header + .list-group, .downloads-card-col .downloads-card > .card-header + .list-group, .colleague-card > .card-header + .list-group, .hobby-card > .card-header + .list-group, .cardy > .card-header + .list-group,
 .card > .list-group + .card-footer,
+.downloads-card-col .downloads-card > .list-group + .card-footer,
 .colleague-card > .list-group + .card-footer,
 .hobby-card > .list-group + .card-footer,
 .cardy > .list-group + .card-footer {
@@ -4329,7 +4333,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
 
-.card-group > .card, .card-group > .colleague-card, .card-group > .hobby-card, .card-group > .cardy {
+.card-group > .card, .downloads-card-col .card-group > .downloads-card, .card-group > .colleague-card, .card-group > .hobby-card, .card-group > .cardy {
   margin-bottom: var(--bs-card-group-margin);
 }
 @media (min-width: 576px) {
@@ -4337,45 +4341,49 @@ textarea.form-control-lg {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card, .card-group > .colleague-card, .card-group > .hobby-card, .card-group > .cardy {
+  .card-group > .card, .downloads-card-col .card-group > .downloads-card, .card-group > .colleague-card, .card-group > .hobby-card, .card-group > .cardy {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card, .card-group > .colleague-card + .card, .card-group > .card + .colleague-card, .card-group > .colleague-card + .colleague-card, .card-group > .hobby-card + .card, .card-group > .hobby-card + .colleague-card, .card-group > .card + .hobby-card, .card-group > .colleague-card + .hobby-card, .card-group > .hobby-card + .hobby-card, .card-group > .cardy + .card, .card-group > .cardy + .colleague-card, .card-group > .cardy + .hobby-card, .card-group > .card + .cardy, .card-group > .colleague-card + .cardy, .card-group > .hobby-card + .cardy, .card-group > .cardy + .cardy {
+  .card-group > .card + .card, .downloads-card-col .card-group > .downloads-card + .card, .downloads-card-col .card-group > .card + .downloads-card, .downloads-card-col .card-group > .downloads-card + .downloads-card, .card-group > .colleague-card + .card, .downloads-card-col .card-group > .colleague-card + .downloads-card, .card-group > .card + .colleague-card, .downloads-card-col .card-group > .downloads-card + .colleague-card, .card-group > .colleague-card + .colleague-card, .card-group > .hobby-card + .card, .downloads-card-col .card-group > .hobby-card + .downloads-card, .card-group > .hobby-card + .colleague-card, .card-group > .card + .hobby-card, .downloads-card-col .card-group > .downloads-card + .hobby-card, .card-group > .colleague-card + .hobby-card, .card-group > .hobby-card + .hobby-card, .card-group > .cardy + .card, .downloads-card-col .card-group > .cardy + .downloads-card, .card-group > .cardy + .colleague-card, .card-group > .cardy + .hobby-card, .card-group > .card + .cardy, .downloads-card-col .card-group > .downloads-card + .cardy, .card-group > .colleague-card + .cardy, .card-group > .hobby-card + .cardy, .card-group > .cardy + .cardy {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child), .card-group > .colleague-card:not(:last-child), .card-group > .hobby-card:not(:last-child), .card-group > .cardy:not(:last-child) {
+  .card-group > .card:not(:last-child), .downloads-card-col .card-group > .downloads-card:not(:last-child), .card-group > .colleague-card:not(:last-child), .card-group > .hobby-card:not(:last-child), .card-group > .cardy:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top, .card-group > .card:not(:last-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .card:not(:last-child) .colleague-card-img, .card-group > .colleague-card:not(:last-child) .card-img-top, .card-group > .colleague-card:not(:last-child) .colleague-card-img, .card-group > .hobby-card:not(:last-child) .card-img-top, .card-group > .hobby-card:not(:last-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .hobby-card:not(:last-child) .colleague-card-img, .card-group > .cardy:not(:last-child) .card-img-top, .card-group > .cardy:not(:last-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .cardy:not(:last-child) .colleague-card-img,
+  .card-group > .card:not(:last-child) .card-img-top, .downloads-card-col .card-group > .downloads-card:not(:last-child) .card-img-top, .card-group > .card:not(:last-child) .colleague-card .colleague-card-img, .downloads-card-col .card-group > .downloads-card:not(:last-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .card:not(:last-child) .colleague-card-img, .colleague-card .downloads-card-col .card-group > .downloads-card:not(:last-child) .colleague-card-img, .downloads-card-col .colleague-card .card-group > .downloads-card:not(:last-child) .colleague-card-img, .card-group > .colleague-card:not(:last-child) .card-img-top, .card-group > .colleague-card:not(:last-child) .colleague-card-img, .card-group > .hobby-card:not(:last-child) .card-img-top, .card-group > .hobby-card:not(:last-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .hobby-card:not(:last-child) .colleague-card-img, .card-group > .cardy:not(:last-child) .card-img-top, .card-group > .cardy:not(:last-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .cardy:not(:last-child) .colleague-card-img,
   .card-group > .card:not(:last-child) .card-header,
+  .downloads-card-col .card-group > .downloads-card:not(:last-child) .card-header,
   .card-group > .colleague-card:not(:last-child) .card-header,
   .card-group > .hobby-card:not(:last-child) .card-header,
   .card-group > .cardy:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .colleague-card:not(:last-child) .card-img-bottom, .card-group > .hobby-card:not(:last-child) .card-img-bottom, .card-group > .cardy:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-img-bottom, .downloads-card-col .card-group > .downloads-card:not(:last-child) .card-img-bottom, .card-group > .colleague-card:not(:last-child) .card-img-bottom, .card-group > .hobby-card:not(:last-child) .card-img-bottom, .card-group > .cardy:not(:last-child) .card-img-bottom,
   .card-group > .card:not(:last-child) .card-footer,
+  .downloads-card-col .card-group > .downloads-card:not(:last-child) .card-footer,
   .card-group > .colleague-card:not(:last-child) .card-footer,
   .card-group > .hobby-card:not(:last-child) .card-footer,
   .card-group > .cardy:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child), .card-group > .colleague-card:not(:first-child), .card-group > .hobby-card:not(:first-child), .card-group > .cardy:not(:first-child) {
+  .card-group > .card:not(:first-child), .downloads-card-col .card-group > .downloads-card:not(:first-child), .card-group > .colleague-card:not(:first-child), .card-group > .hobby-card:not(:first-child), .card-group > .cardy:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .card:not(:first-child) .colleague-card-img, .card-group > .colleague-card:not(:first-child) .card-img-top, .card-group > .colleague-card:not(:first-child) .colleague-card-img, .card-group > .hobby-card:not(:first-child) .card-img-top, .card-group > .hobby-card:not(:first-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .hobby-card:not(:first-child) .colleague-card-img, .card-group > .cardy:not(:first-child) .card-img-top, .card-group > .cardy:not(:first-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .cardy:not(:first-child) .colleague-card-img,
+  .card-group > .card:not(:first-child) .card-img-top, .downloads-card-col .card-group > .downloads-card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) .colleague-card .colleague-card-img, .downloads-card-col .card-group > .downloads-card:not(:first-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .card:not(:first-child) .colleague-card-img, .colleague-card .downloads-card-col .card-group > .downloads-card:not(:first-child) .colleague-card-img, .downloads-card-col .colleague-card .card-group > .downloads-card:not(:first-child) .colleague-card-img, .card-group > .colleague-card:not(:first-child) .card-img-top, .card-group > .colleague-card:not(:first-child) .colleague-card-img, .card-group > .hobby-card:not(:first-child) .card-img-top, .card-group > .hobby-card:not(:first-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .hobby-card:not(:first-child) .colleague-card-img, .card-group > .cardy:not(:first-child) .card-img-top, .card-group > .cardy:not(:first-child) .colleague-card .colleague-card-img, .colleague-card .card-group > .cardy:not(:first-child) .colleague-card-img,
   .card-group > .card:not(:first-child) .card-header,
+  .downloads-card-col .card-group > .downloads-card:not(:first-child) .card-header,
   .card-group > .colleague-card:not(:first-child) .card-header,
   .card-group > .hobby-card:not(:first-child) .card-header,
   .card-group > .cardy:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .colleague-card:not(:first-child) .card-img-bottom, .card-group > .hobby-card:not(:first-child) .card-img-bottom, .card-group > .cardy:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-img-bottom, .downloads-card-col .card-group > .downloads-card:not(:first-child) .card-img-bottom, .card-group > .colleague-card:not(:first-child) .card-img-bottom, .card-group > .hobby-card:not(:first-child) .card-img-bottom, .card-group > .cardy:not(:first-child) .card-img-bottom,
   .card-group > .card:not(:first-child) .card-footer,
+  .downloads-card-col .card-group > .downloads-card:not(:first-child) .card-footer,
   .card-group > .colleague-card:not(:first-child) .card-footer,
   .card-group > .hobby-card:not(:first-child) .card-footer,
   .card-group > .cardy:not(:first-child) .card-footer {
@@ -7069,7 +7077,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .template-body-row .colleagues-row .colleague-card-col, .course-card-row .course-body-col, .course-card-row .course-img-col, .contact-body-row .contact-body-links-col, .contact-body-row .contact-body-info-col, .contact-container .contact-body-row, .contact-container .contact-title-row, .hobby-body-col, .hobby-img-col, .homepage-body-nav, .homepage-body-title, .homepage-body, .template-container .template-body-row, .template-container .template-title-row {
+.d-flex, .relatedpages-options-row .relatedpages-option-col, .downloads-body-row, .compsci-body-row, .colleagues-body-row .colleagues-row .colleague-card-col, .colleagues-body-row, .course-card-row .course-body-col, .course-card-row .course-img-col, .courses-body-row, .contact-body-row .contact-body-links-col, .contact-body-row .contact-body-info-col, .contact-container .contact-body-row, .contact-container .contact-title-row, .hobby-body-col, .hobby-img-col, .homepage-body-nav, .homepage-body-title, .homepage-body, .template-container .template-body-row, .template-container .template-title-row {
   display: flex !important;
 }
 
@@ -7422,7 +7430,7 @@ textarea.form-control-lg {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .template-body-row .colleagues-row .colleague-card-col, .course-card-row .course-img-col, .contact-body-row .contact-body-links-col, .contact-body-row .contact-body-info-col, .contact-container .contact-body-row, .contact-container .contact-title-row, .hobby-img-col, .hobbies-cards-row, .nav-navbar, .homepage-body-nav, .homepage-body-title, .homepage-body, .template-container .template-body-row, .template-container .template-title-row {
+.justify-content-center, .relatedpages-options-row .relatedpages-option-col, .downloads-body-row, .compsci-body-row, .colleagues-body-row .colleagues-row .colleague-card-col, .colleagues-body-row, .course-card-row .course-img-col, .courses-body-row, .contact-body-row .contact-body-links-col, .contact-body-row .contact-body-info-col, .contact-container .contact-body-row, .contact-container .contact-title-row, .hobby-img-col, .hobbies-cards-row, .nav-navbar, .homepage-body-nav, .homepage-body-title, .homepage-body, .template-container .template-body-row, .template-container .template-title-row {
   justify-content: center !important;
 }
 
@@ -7446,7 +7454,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center, .course-card-row .course-body-col, .contact-body-row .contact-body-links-col, .contact-body-row .contact-body-info-col, .contact-container .contact-title-row, .hobby-body-col, .homepage-body-nav, .homepage-body-title, .homepage-body, .template-container .template-body-row, .template-container .template-title-row {
+.align-items-center, .compsci-body-row, .colleagues-body-row, .course-card-row .course-body-col, .courses-body-row, .contact-body-row .contact-body-links-col, .contact-body-row .contact-body-info-col, .contact-container .contact-title-row, .hobby-body-col, .homepage-body-nav, .homepage-body-title, .homepage-body, .template-container .template-body-row, .template-container .template-title-row {
   align-items: center !important;
 }
 
@@ -11189,8 +11197,13 @@ textarea.form-control-lg {
   }
 }
 
+.about-body-info-col .about-body-title {
+  padding-left: 25px;
+  color: white;
+  font-size: 1.8rem;
+}
 .about-body-info-col .about-body-info {
-  padding: 25px;
+  padding-left: 25px;
   color: white;
   font-size: 1.3rem;
 }
@@ -11280,6 +11293,16 @@ textarea.form-control-lg {
   }
 }
 
+.courses-body-row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
 .course-card {
   width: 80%;
   margin: auto;
@@ -11359,7 +11382,16 @@ textarea.form-control-lg {
   color: rgb(147, 147, 147);
 }
 
-.template-body-row .colleagues-row {
+.colleagues-body-row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.colleagues-body-row .colleagues-row {
   width: 75%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -11371,7 +11403,7 @@ textarea.form-control-lg {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.template-body-row .colleagues-row .colleague-card-col {
+.colleagues-body-row .colleagues-row .colleague-card-col {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -11380,7 +11412,7 @@ textarea.form-control-lg {
   margin-top: var(--bs-gutter-y);
 }
 @media (min-width: 768px) {
-  .template-body-row .colleagues-row .colleague-card-col {
+  .colleagues-body-row .colleagues-row .colleague-card-col {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -11398,6 +11430,134 @@ textarea.form-control-lg {
     padding-bottom: 40px;
     padding-top: 40px;
   }
+}
+
+.compsci-body-row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.compsci-body-row .compsci-side-col {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .compsci-body-row .compsci-side-col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+.compsci-body-row .compsci-body-col {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+@media (min-width: 992px) {
+  .compsci-body-row .compsci-body-col {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+.compsci-side-col .compsci-side-img {
+  padding: 10px;
+}
+
+.compsci-body-col .compsci-body-info {
+  padding-left: 25px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.downloads-body-row {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.downloads-body-row .downloads-card-col {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+@media (min-width: 768px) {
+  .downloads-body-row .downloads-card-col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+.relatedpages-container {
+  padding: 40px;
+  width: 80%;
+}
+.relatedpages-container .relatedpages-title-row {
+  width: 100%;
+  text-align: center;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.relatedpages-container .relatedpages-options-row {
+  width: 100%;
+  --bs-gutter-x: 10px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.relatedpages-options-row .relatedpages-option-col {
+  width: 80%;
+  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+@media (min-width: 768px) {
+  .relatedpages-options-row .relatedpages-option-col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+.relatedpages-title-row .relatedpages-title {
+  width: 100%;
+  color: white;
+  padding: 10px;
+}
+
+.relatedpages-option-col .relatedpages-option {
+  font-size: 1.3rem;
+  color: white;
+  padding: 5px;
 }
 
 * {

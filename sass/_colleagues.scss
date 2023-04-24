@@ -1,4 +1,9 @@
-.template-body-row{
+.colleagues-body-row{
+    @include make-row($gutter: 0);
+    @extend .d-flex,
+            .justify-content-center,
+            .align-items-center;
+
     .colleagues-row{
         width: 75%;
         padding-top: 40px;

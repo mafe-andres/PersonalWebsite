@@ -1,0 +1,45 @@
+@use "colors" as c;
+
+.relatedpages-container{
+    padding: 40px;
+    width: 80%;
+    @extend .container-fluid;
+    .relatedpages-title-row{
+        width: 100%;
+        text-align: center;
+        @include make-row($gutter: 0);
+    }
+    .relatedpages-options-row{
+        width: 100%;
+        @include make-row($gutter: 10px);
+    }
+}
+
+.relatedpages-options-row{
+    .relatedpages-option-col{
+        width: 80%;
+        text-align: center;
+        @include make-col-ready();
+        @include media-breakpoint-up(md){
+            @include make-col(4);
+        }
+        @extend .d-flex,
+                .justify-content-center;
+    }
+}
+
+.relatedpages-title-row{
+    .relatedpages-title{
+        width: 100%;
+        color: white;
+        padding: 10px;
+    }
+}
+
+.relatedpages-option-col{
+    .relatedpages-option{
+        font-size: 1.3rem; 
+        color: white;
+        padding: 5px;
+    }
+}

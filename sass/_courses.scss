@@ -1,3 +1,10 @@
+.courses-body-row{
+    @include make-row($gutter: 0);
+    @extend .d-flex,
+            .justify-content-center,
+            .align-items-center;
+}
+
 .course-card{
     width: 80%;
     margin: auto;

@@ -1,0 +1,17 @@
+.downloads-body-row{
+    @include make-row($gutter: 20px);
+    @extend .d-flex,
+            .justify-content-center;
+    .downloads-card-col{
+        @include make-col-ready();
+        @include media-breakpoint-up(md){
+            @include make-col(4);
+        }
+    }
+}
+
+.downloads-card-col{
+    .downloads-card{
+        @extend .card;
+    }
+}
