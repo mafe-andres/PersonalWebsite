@@ -2,7 +2,7 @@
     <header class="header">
       <nav class="navbar">
           <div class="navbar-container">
-              <a class="navbar-logo" href="homepage.html">
+              <a class="navbar-logo" href="index.shtml">
                   <img src="images/M.png" class="navbar-logo-img" alt="MAFE">
               </a>
               <button class="navbar-collapse-button" type="button" data-toggle="collapse"

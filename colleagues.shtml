@@ -45,7 +45,7 @@
                             <div class="colleague-card-body">
                             <h5 class="colleague-card-body-title">Alan Calderon</h5>
                             <h6 class="colleague-card-body-title">Professor</h6>
-                            <p class="colleague-card-body-text">Alan was my software design professor.</p>
+                            <p class="colleague-card-body-text">Alan was my software design professor, he's fun and lighthearted. He might be retired now but I still remember him fondly.</p>
                             </div>
                         </div>    
                     </div>
@@ -55,7 +55,7 @@
                             <div class="colleague-card-body">
                             <h5 class="colleague-card-body-title">Cristian Lopez</h5>
                             <h6 class="colleague-card-body-title">Professor</h6>
-                            <p class="colleague-card-body-text">I remember Gustavo from my very first day of class, he however does not remember me (there is beef becuase of this). We work on most project together now.</p>
+                            <p class="colleague-card-body-text">This man told me straight up once, "that's why you're a developer, to figure things out".</p>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <img src="images/barulio.jpg" class="colleague-card-img" alt="Braulio">
                             <div class="colleague-card-body">
                             <h5 class="colleague-card-body-title">Braulio Solano</h5>
-                            <p class="colleague-card-body-text">I remember Gustavo from my very first day of class, he however does not remember me (there is beef becuase of this). We work on most project together now.</p>
+                            <p class="colleague-card-body-text">Braulio is my professor this semester, he is at fault for making me do this website, but we like him, he's fun.</p>
                             </div>
                         </div>
                     </div>

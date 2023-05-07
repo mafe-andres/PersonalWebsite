@@ -31,7 +31,7 @@
                 <a class="nav-navbar-link navbar-text-4" href="about.shtml">About this site</a>
               </li>
               <li class="nav-navbar-item">
-                <a class="nav-navbar-link navbar-text-5" href="contact.html">Contact me</a>
+                <a class="nav-navbar-link navbar-text-5" href="contact.shtml">Contact me</a>
               </li>
             </ul>
           </nav>
